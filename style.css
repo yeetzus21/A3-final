@@ -65,12 +65,8 @@ header {
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.5em;
-}
-
-article {
-  width:50%;
-  float:left;
+    font-size: 1.2em;
+    color: white;
 }
 
 .hero {
@@ -98,11 +94,40 @@ article {
     font-weight: bold;
     font-size: 2em;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "text image";
+}
+
+
+.about .text {
+  grid-area: text; 
+  padding:5em;
+  background-color: #7F3139;
+  margin: auto;
+}
+
+.about .image{
+  background-image: url("images/about.jpg");
+  grid-area: image; 
+}
+
+
+
+
 h1,
 h2,
 h3,
 h4 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.6em;
 	margin-top: 0;
 	margin-bottom: 0.5em;
-	font-weight: 400;
+	font-weight: bold;
+  color:white;
 }
