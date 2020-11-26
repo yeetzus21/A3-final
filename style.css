@@ -1,0 +1,106 @@
+/* Navigation Bar CSS */
+header {
+	color: white;
+}
+
+.navbar {
+  width: 100%;
+  background-color:white;
+}
+
+.navbar img {
+  max-width: 33%;
+  max-height: 2%
+}
+
+.navbar a {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  float: right;
+  min-width: 22%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #00A69D;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: white;
+  text-decoration: none;
+  transition-property: opacity;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+.navbar a:nth-of-type(2) {
+  background-color: #F398A4
+}
+
+.navbar a:nth-of-type(3) {
+  background-color: #FFD632
+}
+
+.navbar a:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar a {
+    padding-top: 3%;
+  padding-bottom: 3%;
+    float: none;
+    display: block;
+  }
+  .navbar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+
+
+/* Main */
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.hero {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 100%;
+    height: 30%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    color: white; 
+    
+    background-image: url('images/pledge-background.jpg');
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-weight: bold;
+    font-size: 2em;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-weight: 400;
+}
