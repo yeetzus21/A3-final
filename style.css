@@ -98,14 +98,16 @@ body {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "text image";
+  "text image"
+  "image2 text2"
+  "text3 image3";
 }
 
-
 .about .text {
+  height: 100%;
   grid-area: text; 
   padding:5em;
   background-color: #7F3139;
@@ -114,11 +116,93 @@ body {
 
 .about .image{
   background-image: url("images/about.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
   grid-area: image; 
 }
 
+.about .text2 {
+  height: 100%;
+  grid-area: text2; 
+  padding:5em;
+  background-color: #264764;
+  margin: auto;
+}
 
 
+.about .image2 {
+  background-image: url("images/raffle.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  grid-area: image2; 
+}
+
+.about .image3 {
+  background-image: url("images/bears.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  grid-area: image3; 
+}
+.about .text3 {
+  height:100%
+  grid-area: text3; 
+  padding:5em;
+  background-color: #7A69AF;
+  margin: auto;
+}
+
+.about button {
+  font-family: 'PT Sans', sans-serif;
+margin:auto;
+  display: flex;
+  border-radius: 15px;
+  text-align:center;
+  font-size: 1.2em;
+  padding: 24px 60px;
+  color: white;
+   background-color: Transparent;
+   border: 2px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  transition-property: color, background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+.about button:hover {
+  color: #ffffff;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.social h3 {
+  padding: 2em;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  color:black;
+}
+
+.social section {
+  display:inline-block;
+  flex: 33%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.social img {
+  vertical-align: middle;
+  width: 75%;
+  transition-property: opacity;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.social img:hover {
+  opacity: 0.5;
+}
 
 h1,
 h2,
