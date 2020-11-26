@@ -48,27 +48,29 @@ header {
   padding-bottom: 3%;
     float: none;
     display: block;
+    min-height:50%;
   }
   .navbar img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  min-width: 50%;
 }
 }
 
 
 /* Main */
 
-body {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 1.5em;
-}
 
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
+}
+
+article {
+  width:50%;
+  float:left;
 }
 
 .hero {
