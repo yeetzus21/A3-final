@@ -281,8 +281,11 @@ margin:auto;
 }
 
 
-
-/* RESEARCH PAGE */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------RESEARCH PAGE */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
 
 .research {
   background-color: #7F3139;
@@ -366,7 +369,6 @@ margin:auto;
   opacity: 0.5;
 }
 
-
 .p1 { grid-area: p1; }
 .p2 { grid-area: p2; }
 .p3 { grid-area: p3; }
@@ -374,7 +376,159 @@ margin:auto;
 .p5 { grid-area: p5; }
 .p6 { grid-area: p6; }
 
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* -----------------Fundraise Page--------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
 
+.events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "title title title"
+    "p1 p2 p3"
+    "p4 p5 p6";
+}
+.events .title {
+  margin:auto;
+  grid-area: title;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: center;
+  color:black;
+}
+
+.events h4 {
+  margin:auto;
+  display: block;
+  width: 300px;
+  color: white;
+  text-align: center;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+
+.events p {
+  margin:auto;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.8em;
+  display: block;
+  width: 300px;
+  color:white;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.events img {
+padding-top: 1em;
+display: block;
+margin:auto;
+  width: 300px;
+  transition-property: opacity;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.events img:hover {
+  opacity: 0.5;
+}
+
+.p1 { grid-area: p1; background-color:#8AC640; }
+.p2 { grid-area: p2; background-color:#C12735;}
+.p3 { grid-area: p3; background-color:#C0B49B;}
+.p4 { grid-area: p4; background-color:#1475BC;}
+.p5 { grid-area: p5; background-color:#F0672A;}
+.p6 { grid-area: p6; background-color:#7A69AF;}
+
+.fundraise {
+  background-color:#EE4E4E;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "f";
+}
+.f { grid-area: f; }
+
+.f h3 {
+  margin:auto;
+  padding: 1em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: center;
+  color: white;
+}
+
+.f h4 {
+  margin:auto;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+}
+
+.f p {
+  margin:auto;
+  padding-left:5em;
+  padding-right:5em;
+  padding-bottom:2em;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  font-family: 'PT Sans', sans-serif;
+  width: 100%; /* Full width */
+  padding: 1em;; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea {
+  font-family: 'PT Sans', sans-serif;
+  height:200px;
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+  margin:auto;
+  display: flex;
+  background-color: #4CAF50;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 24px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
 /* Responsive */
 
@@ -396,6 +550,7 @@ margin:auto;
 }
 
 @media screen and (max-width: 1000px) {
+.events,
 .projects,
 .research,
 .social,
